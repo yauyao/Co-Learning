@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_1"
+    android:orientation="vertical" >
+ 	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:gravity="center" >
+
+ 		<TextView
+ 		    android:id="@+id/wordtesttitle"
+ 		    android:layout_width="wrap_content"
+ 		    android:layout_height="wrap_content"
+ 		    android:text="單字測驗" />
+        
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+        <Spinner
+            android:id="@+id/testkind"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:gravity="center" >
+        
+        <Spinner
+            android:id="@+id/secondkind"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="165dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/choice"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="選擇" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="155dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/fill"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="填充" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/wordtestback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="返回選單" />
+
+    </LinearLayout>
+
+</LinearLayout>
