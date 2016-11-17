@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_1"
+    android:orientation="vertical" >
+  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="vertical"
+        android:gravity="center"  >
+
+        <TextView
+            android:id="@+id/wordcardtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="單字閃卡" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="375dp"
+            
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/word"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="40sp"
+                android:text="" />
+             <TextView
+                android:id="@+id/howspeak"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical|left"
+                android:textSize="20sp"
+                android:text="" />
+              <TextView
+                android:id="@+id/wordkind"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                 android:textSize="15sp"
+                android:text="" />
+               <TextView
+                android:id="@+id/mean"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                 android:textSize="15sp"
+                android:text="" />
+
+               <TextView
+                   android:id="@+id/wordexample"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text=""
+                   android:textSize="15sp" />
+               
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="375dp"
+            
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/important"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/star" />
+            
+            <ImageButton
+                android:id="@+id/importantpiont"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/fullstar"
+                android:visibility="invisible" />
+            
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="vertical" />
+            
+            <ImageButton
+                android:id="@+id/voice"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/horn" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         
+         android:orientation="horizontal" >
+
+         <Button
+             android:id="@+id/wordback"
+             android:layout_width="100dp"
+             android:layout_height="50dp"
+             android:text="回選單" />
+          
+          <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+          
+           <Button
+             android:id="@+id/nextword"
+             android:layout_width="100dp"
+             android:layout_height="50dp"
+             android:text="下一頁" />
+           
+           <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+          
+           <Button
+             android:id="@+id/wordmain"
+             android:layout_width="150dp"
+             android:layout_height="50dp"
+             android:text="回單字選單" />
+     </LinearLayout> 
+</LinearLayout>
